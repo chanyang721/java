@@ -1,4 +1,4 @@
-package lecture.basic.oop.procedural;
+package com.inflearn.lecture.basic.oop.procedural;
 
 public class Procedural {
 

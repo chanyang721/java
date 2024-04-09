@@ -1,4 +1,4 @@
-package lecture.basic.class_.example;
+package com.inflearn.lecture.basic.class_.example;
 
 import java.util.Scanner;
 

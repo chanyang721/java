@@ -1,4 +1,4 @@
-package lecture.basic.contructor;
+package com.inflearn.lecture.basic.contructor;
 
 public class Constructor {
     public static void main(String[] args) {

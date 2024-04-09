@@ -1,6 +1,6 @@
-package lecture.basic.package_;
+package com.inflearn.lecture.basic.package_;
 
-import lecture.basic.package_.a.User;
+import com.inflearn.lecture.basic.package_.a.User;
 
 public class Package {
     public static void main(String[] args) {

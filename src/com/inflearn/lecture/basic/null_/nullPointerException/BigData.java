@@ -1,4 +1,4 @@
-package lecture.basic.null_.nullPointerException;
+package com.inflearn.lecture.basic.null_.nullPointerException;
 
 public class BigData {
     Data data;

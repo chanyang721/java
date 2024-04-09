@@ -1,8 +1,8 @@
-package lecture.basic.class_.example;
+package com.inflearn.lecture.basic.class_.example;
 
 import java.util.Scanner;
 
-import static lecture.basic.class_.example.ProductOrder.getTotalAmount;
+import static com.inflearn.lecture.basic.class_.example.ProductOrder.getTotalAmount;
 
 public class ScannerTest {
 

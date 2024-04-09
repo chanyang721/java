@@ -1,4 +1,4 @@
-package lecture;
+package com.inflearn.lecture;
 
 public class HelloJava {
     // 주석 1

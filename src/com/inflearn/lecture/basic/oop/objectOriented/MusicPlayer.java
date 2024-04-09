@@ -1,4 +1,4 @@
-package lecture.basic.oop.objectOriented;
+package com.inflearn.lecture.basic.oop.objectOriented;
 
 public class MusicPlayer {
     static boolean isActive;

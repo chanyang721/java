@@ -1,4 +1,4 @@
-package lecture.basic.oop.objectOriented;
+package com.inflearn.lecture.basic.oop.objectOriented;
 
 public class ObjectOriented {
     public static void main(String[] args) {

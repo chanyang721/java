@@ -1,4 +1,4 @@
-package lecture.basic.class_;
+package com.inflearn.lecture.basic.class_;
 
 public class Class {
 
