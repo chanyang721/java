@@ -22,7 +22,7 @@ public class Computer {
     }
 
     Computer(String cpu, String board, String ram, String gpu) {
-        this("삼성", board, ram); // this 함수로 생성자 함수 내부에서만 사용 가능
+        this("삼성", board, ram); // this 함수: 생성자 함수 첫줄에만 사용 가능
         this.gpu = gpu;
         System.out.println("생성자 2 호출");
     }
