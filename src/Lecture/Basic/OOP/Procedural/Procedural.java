@@ -7,42 +7,33 @@ public class Procedural {
         * 절차 지향 프로그래밍
         * - 프로그램 실행 순서 흐름을 순차적으로 처리하는 방식
         * - "어떻게" 를 중심으로 프로그래밍 한다.
+        *
+        * 절차 지향 프로그래밍의 한계
+        *   - 데이터와 기능이 분리되어 있다.
+        *       - MusicPlayer 데이터와 데이터를 사용한 기능 setMusicPlayer, setVolume, 등을 분리하여 관리
         * */
-        boolean isActive = false;
-        int volume = 0;
         MusicPlayer player = new MusicPlayer();
 
         // 플레이어 실행
         setMusicPlayerActive(player, "on");
-//        player.isActive = true;
         System.out.println("isActive : " + player.isActive);
 
         // 볼륨 증가
         setVolume(player, "+");
-//        player.volume++;
         System.out.println("player.volume : " + player.volume);
 
         // 볼륨 증가
         setVolume(player, "+");
-//        player.volume++;
         System.out.println("player.volume : " + player.volume);
 
         // 볼륨 감소
         setVolume(player, "-");
-//        player.volume--;
         System.out.println("player.volume : " + player.volume);
 
         // 상태 확인
         showStatus(player);
-//        if (player.isActive) {
-//            System.out.println("실행 상태 확인 : " + player.isActive);
-//            System.out.println("player.volume : " + player.volume);
-//        } else {
-//            System.out.println("플레이어 실행 상태 확인 : " + player.isActive);
-//        }
 
         // 플레이어 끄기
-//        player.isActive = false;
         setMusicPlayerActive(player, "off");
         System.out.println("player.isActive : " + player.isActive);
     }
