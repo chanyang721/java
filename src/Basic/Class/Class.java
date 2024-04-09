@@ -33,7 +33,14 @@ public class Class {
 
         System.out.println("이름: " + student.name);
         Student[] students = new Student[2]; // 클래스이자 타입으로 생성 가능. ?
-        students[0] = new Student();
-        students[1] = new Student();
+        Student[] studentsShort = {new Student(), new Student()};
+
+        System.out.println(students); // [LBasic.Class.Student;@a09ee92
+        for (Student s : students) {
+            System.out.println("이름: " + s);
+        }
+        for (int i = 0; i < studentsShort.length; i++) { // itar
+            Student student1 = studentsShort[i]; // souf
+        };
      }
 }
