@@ -4,16 +4,25 @@ public class MusicPlayer {
     static boolean isActive;
     static int volume;
 
-    void setMusicPlayerActive(String status) {
-        if(status.equals("on")) isActive = true;
-        else if(status.equals("off")) isActive = false;
+
+    void on() {
+        isActive = true;
+        System.out.println("뮤직 플레이어를 시작합니다.");
+    }
+    void off() {
+        isActive = false;
+        System.out.println("뮤직 플레이어를 종료합니다.");
     }
 
-    void setVolume(String status) {
-        if(status.equals("+")) volume++;
-        else if (status.equals("-")) volume--;
+    void volumeDown() {
+        volume--;
     }
 
+    void volumeUp() {
+        volume++;
+    }
+
+    /* 상태 확인 */
     void showStatus() {
         if (isActive) {
             System.out.println("실행 상태 확인 : " + isActive);
