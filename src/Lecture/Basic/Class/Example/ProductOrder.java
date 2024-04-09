@@ -16,13 +16,14 @@ public class ProductOrder {
             totalPrice += products[i].price;
         }
 
-        System.out.printf("totalPrice: " + totalPrice);
-
         ProductOrder[] orders = new ProductOrder[]{
             createOrder("CPU AMD 7800x3D", 1000, 1),
             createOrder("GPU 4090 ti super", 1000, 1),
             createOrder("POWER 1000W", 1000, 1)
         };
+
+        int totalAmount = getTotalAmount(orders);
+        System.out.println("총 금액 :"  + totalAmount);
     }
 
 
@@ -36,5 +37,14 @@ public class ProductOrder {
         order.quantity = quantity;
 
         return order;
+    }
+
+    static int getTotalAmount(ProductOrder[] orders) {
+        int totalAmount = 0;
+        for (int i = 0; i < orders.length; i++) {
+            totalAmount += orders[i].product.price;
+        }
+
+        return totalAmount;
     }
 }
