@@ -1,10 +1,15 @@
 package Lecture.Basic.Class.Example;
 
+import java.util.Scanner;
+
 public class ProductOrder {
     Product product;
     int quantity;
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+
         Product[] products = {new Product(), new Product(), new Product()};
         for (int i = 0; i < products.length; i++) {
             products[i].name = "이름";
