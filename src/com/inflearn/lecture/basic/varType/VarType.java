@@ -1,4 +1,4 @@
-package lecture.basic.varType;
+package com.inflearn.lecture.basic.varType;
 
 public class VarType {
     /*

@@ -1,4 +1,4 @@
-package lecture.start;
+package com.inflearn.lecture.start;
 
 public class Variable {
     public static void main(String[] args) {

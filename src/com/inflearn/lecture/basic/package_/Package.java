@@ -1,5 +1,6 @@
 package com.inflearn.lecture.basic.package_;
 
+
 import com.inflearn.lecture.basic.package_.a.User;
 
 public class Package {
@@ -19,6 +20,6 @@ public class Package {
         *       - os 별로 대소문자 규정이 달라 에러 가능성 -> java에서 소문자로 통일
         * */
         User userA = new User();
-        lecture.basic.package_.b.User userB = new lecture.basic.package_.b.User();
+        com.inflearn.lecture.basic.package_.b.User userB = new com.inflearn.lecture.basic.package_.b.User();
     }
 }
