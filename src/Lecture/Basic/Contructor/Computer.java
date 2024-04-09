@@ -12,14 +12,24 @@ public class Computer {
     /*
     * 생성자는 class 이름과 같은 메서드이다.
     * 생성자는 반환 타입이 없다.
+    * 생성자 오버로딩으로 여러개의 생성자 생성 가능
     * */
     Computer(String cpu, String board, String ram) {
         this.cpu = cpu;
         this.board = board;
         this.ram = ram;
+        System.out.println("생성자 1 호출");
     }
 
-    /*  */
+    Computer(String cpu, String board, String ram, String gpu) {
+        this.cpu = cpu;
+        this.board = board;
+        this.ram = ram;
+        this.gpu = gpu;
+        System.out.println("생성자 2 호출");
+    }
+
+
     void initComputer (String cpu, String board, String ram) {
         /*
         * this: 인스턴스 생성 시 객체 자신
