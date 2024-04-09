@@ -1,4 +1,4 @@
-package Basic.Class;
+package Lecture.Basic.Class;
 
 public class Class {
 

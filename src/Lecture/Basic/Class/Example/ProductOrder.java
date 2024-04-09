@@ -1,4 +1,4 @@
-package Basic.Class.Example;
+package Lecture.Basic.Class.Example;
 
 public class ProductOrder {
 
