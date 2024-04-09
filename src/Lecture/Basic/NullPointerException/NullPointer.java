@@ -20,6 +20,5 @@ public class NullPointer {
 
 //        bigData.data.value = 10; // Cannot assign field "value" because "data" is null -> Null Pointer Exception
         bigData.data = new Data();
-
     }
 }
