@@ -1,6 +1,6 @@
-package variable; // 소속된 패키지 선언
+package Basic.language;
 
-public class Var {
+public class Variable {
 
 
     public static void main(String[] args) {
