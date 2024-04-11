@@ -8,7 +8,9 @@ public class ObjectOriented {
          * 장점:
          *  - 관련 데이터와 기능을 응집력 있게 관리 가능
          *  - 프로그램에서 사용되는 개념 정의에 집중하여 구현
-         *  - 캡슐화: 객체의 역할을 class에 정의하여 내부 작동을 몰라도 사용 할 수 있다.
+         *
+         * 특징:
+         *  - 캡슐화: 객체의 역할을 class에 정의하여 내부 작동을 모은다.
          *  -
          * */
         MusicPlayer player = new MusicPlayer();

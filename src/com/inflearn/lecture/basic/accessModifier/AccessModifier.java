@@ -18,6 +18,9 @@ public class AccessModifier {
         * 접근 제어자 필요성
         *   - 클래스의 내부 속성을 외부에서 접근 할 수 있는 권한 설정이다.
         *   - 외부에 필요한 정보만 노출시키는 추상화 개념과 밀접하다.
+        *   - js와 차이점:
+        *       - java의 package개념으로 default 접근 제어자가 존재
+        *       - class에 public과 default만 사용 가능
         *
         * 접근 제어자 사용 위치
         *   - 필드
