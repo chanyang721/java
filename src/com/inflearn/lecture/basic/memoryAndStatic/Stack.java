@@ -20,10 +20,11 @@ public class Stack {
 
         System.out.println("main end");
 
+        Memory memory = new Memory();
+        Memory.addStaticCount();
+        Memory.addStaticCount();
+        Memory.addStaticCount();
 
-        Memory.addStaticCount();
-        Memory.addStaticCount();
-        Memory.addStaticCount();
     }
 
 

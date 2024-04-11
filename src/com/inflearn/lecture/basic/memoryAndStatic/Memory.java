@@ -1,7 +1,9 @@
 package com.inflearn.lecture.basic.memoryAndStatic;
 
 public class Memory {
-    static int count = 0;
+
+    private int instanceCount;
+    private static int staticCount;
 
 
     public static void main(String[] args) {
@@ -38,8 +40,12 @@ public class Memory {
     }
 
     static void addStaticCount() {
-        System.out.println("메모리 Count, 메모리 영역 동시 관리 테스트 :" + Memory.count++);
-        System.out.println("메모리 Count, 메모리 영역 동시 관리 테스트 :" + Memory.count++);
-        System.out.println("메모리 Count, 메모리 영역 동시 관리 테스트 :" + Memory.count++);
+        Memory memory = new Memory();
+        System.out.println("메모리 Count, 메모리 영역 동시 관리 테스트 :" + ++Memory.staticCount);
+        System.out.println("메모리 Count, 메모리 영역 동시 관리 테스트 :" + ++Memory.staticCount);
+        System.out.println("메모리 Count, 메모리 영역 동시 관리 테스트 :" + ++Memory.staticCount);
+        System.out.println("Heap Area, Count :" + memory.instanceCount); // 인스턴스에서 힙 영역 instance 변수 접근
+        System.out.println("Heap Area, Count :" + staticCount); // 인스턴스에서 메모리 영역의 static 클래스 변수 접근
+        System.out.println("Method Area, Count :" + Memory.staticCount); // 메모리 영역에서 static 클래스 변수 접근
     }
 }
