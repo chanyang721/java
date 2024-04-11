@@ -1,6 +1,7 @@
 package com.inflearn.lecture.basic.memoryAndStatic;
 
 public class Memory {
+    static int count = 0;
 
 
     public static void main(String[] args) {
@@ -34,5 +35,11 @@ public class Memory {
         *   - Why "Stack" Area, not Queue ?
         *       - 프로그램 실행 시, Stack 구조가 유리하다?
         * */
+    }
+
+    static void addStaticCount() {
+        System.out.println("메모리 Count, 메모리 영역 동시 관리 테스트 :" + Memory.count++);
+        System.out.println("메모리 Count, 메모리 영역 동시 관리 테스트 :" + Memory.count++);
+        System.out.println("메모리 Count, 메모리 영역 동시 관리 테스트 :" + Memory.count++);
     }
 }

@@ -19,6 +19,11 @@ public class Stack {
         method2(2);
 
         System.out.println("main end");
+
+
+        Memory.addStaticCount();
+        Memory.addStaticCount();
+        Memory.addStaticCount();
     }
 
 
