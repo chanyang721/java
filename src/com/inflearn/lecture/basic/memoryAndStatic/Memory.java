@@ -33,14 +33,8 @@ public class Memory {
         *       - 위, 아래가 열려 있는 통
         *   - Why "Stack" Area, not Queue ?
         *       - 프로그램 실행 시, Stack 구조가 유리하다?
+        *
+        *   -
         * */
-    }
-
-    static void method1 (int m1) {
-
-    }
-
-    static void method2 (int m2) {
-
     }
 }
