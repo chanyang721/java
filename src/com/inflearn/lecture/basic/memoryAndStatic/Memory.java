@@ -8,7 +8,7 @@ public class Memory {
         * 메모리
         *   - Method Area:
         *       - 클래스 정보: 클래스의 모든 정보를 보관
-        *       - static: static 변수 보관
+        *       - static area: 메서드에 선언된 변수 보관
         *       - 런타임 상수: ?
         *   - Stack Area: 생행된 메서드, 지역 변수, 매계 변수 등 보관
         *       - thread: thread 당 하나의 Stack Area가 생성
@@ -33,8 +33,6 @@ public class Memory {
         *       - 위, 아래가 열려 있는 통
         *   - Why "Stack" Area, not Queue ?
         *       - 프로그램 실행 시, Stack 구조가 유리하다?
-        *
-        *   -
         * */
     }
 }
