@@ -1,6 +1,5 @@
 package com.inflearn.lecture.basic.memoryAndStatic;
 
-import com.inflearn.lecture.basic.memoryAndStatic.example.Deco;
 import com.inflearn.lecture.basic.memoryAndStatic.example.StaticMethod;
 
 public class Memory {
@@ -56,6 +55,7 @@ public class Memory {
         *  제한된 Static 메서드 사용방법
         *   - 스테틱 메서드는 스테틱 변수와 메서드만 사용 가능하다.
         *   - 인스턴스는 인스턴스 변수, 메서드, 스테틱 변수, 메서드 전부 사용 가능하다.
+        *   - static 메서드에서 instance 변수를 접근하기 위해서는, 인스턴스를 매계 변수로 참조값을 통해 접근 가능하다.
         * */
     }
 
