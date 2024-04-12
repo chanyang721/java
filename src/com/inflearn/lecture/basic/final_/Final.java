@@ -27,7 +27,7 @@ public class Final {
         *
         *   - 특징
         *       - final 변수는 상수로서 변경 불가능
-        *       -
+        *       - 상수는 대문자로 선언하여 구분
         *       - static final로 사용 -> js의 const 키워드
         *       - 기능이 아닌 고정된 값을 사용
         *       - 상수는 여러 인스턴스에서 public 접근 제어자로 접근
