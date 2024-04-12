@@ -31,7 +31,7 @@ public class Stack {
     static void method1 (int m1) {
         System.out.println("method1 start");
         System.out.println("m1 : " + m1);
-        System.out.println("method1 end");
+        System.out.println("method1 en d");
 
     }
 

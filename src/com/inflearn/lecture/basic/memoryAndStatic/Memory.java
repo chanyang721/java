@@ -1,5 +1,8 @@
 package com.inflearn.lecture.basic.memoryAndStatic;
 
+import com.inflearn.lecture.basic.memoryAndStatic.example.Deco;
+import com.inflearn.lecture.basic.memoryAndStatic.example.StaticMethod;
+
 public class Memory {
 
     private int instanceCount;
@@ -37,6 +40,14 @@ public class Memory {
         *   - Why "Stack" Area, not Queue ?
         *       - 프로그램 실행 시, Stack 구조가 유리하다?
         * */
+
+        /*
+        * Static
+        *   - 맴버 변수 (필드)
+        *       - 인스턴스 변수
+        *       - class static 변수
+        *   - 매계 변수
+        * */
     }
 
     static void addStaticCount() {
@@ -45,7 +56,13 @@ public class Memory {
         System.out.println("메모리 Count, 메모리 영역 동시 관리 테스트 :" + ++Memory.staticCount);
         System.out.println("메모리 Count, 메모리 영역 동시 관리 테스트 :" + ++Memory.staticCount);
         System.out.println("Heap Area, Count :" + memory.instanceCount); // 인스턴스에서 힙 영역 instance 변수 접근
-        System.out.println("Heap Area, Count :" + staticCount); // 인스턴스에서 메모리 영역의 static 클래스 변수 접근
-        System.out.println("Method Area, Count :" + Memory.staticCount); // 메모리 영역에서 static 클래스 변수 접근
+        System.out.println("Heap Area, Count :" + memory.staticCount); // 인스턴스에서 메모리 영역의 static 클래스 변수 접근:
+            /*
+            * 인스턴스에서 static 변수에 접근하는 방법은 권장하지 않음
+            *   - 읽는 사람이 인스턴스 변수인지, 스테틱 변수인지 구분되지 않음
+            * */
+
+        System.out.println("Method Area, Count: " + Memory.staticCount); // 메모리 영역에서 static 클래스 변수 접근
+        System.out.println("Static Method: " + StaticMethod.deco("Hello!"));
     }
 }
