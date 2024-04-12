@@ -1,5 +1,7 @@
 package com.inflearn.lecture.basic.memoryAndStatic.example;
 
+
+
 public class StaticMethod {
     private static String staticValue = "staticValue";
     private String instanceValue = "instanceValue";
