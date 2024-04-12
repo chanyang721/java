@@ -13,8 +13,9 @@ public class MathArrayUtils {
         return result;
     }
 
-    public static int average(int[] array) {
-        int sum = sum(array);
+    public static double average(int[] array) {
+        double sum = (double) sum(array);
+
         return sum / array.length;
     }
 
