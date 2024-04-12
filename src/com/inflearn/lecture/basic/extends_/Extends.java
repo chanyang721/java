@@ -19,15 +19,16 @@ public class Extends {
         upCasting();
 
         Parent parent = new Parent();
-        Parent parent1 = new Child();
+        Parent parent1 = new Child("Red");
         InstanceOf(parent);
         InstanceOf(parent1);
 
         overriding();
+        poly();
     }
 
     public static void downCasting() {
-        Parent parent = new Child(); // 부모에 자식 생성 가능 -> 부모 인스턴스도 같이 생성
+        Parent parent = new Child("Red"); // 부모에 자식 생성 가능 -> 부모 인스턴스도 같이 생성
         System.out.println("parent: " + parent.parentMethod()); // 타입이 부모라서 자식 메서드 사용 불가능
 
         Child child = (Child) parent; // 부모 타입으로 자식 인스턴스 생성 후, 자식 메서드에 접근하기 위해 다운 케스팅
@@ -41,9 +42,8 @@ public class Extends {
 
     }
 
-
     public static void upCasting() {
-        Child child = new Child(); // 생성 시, 상속 관계의 모든 부모 인스턴스 생성
+        Child child = new Child("Red"); // 생성 시, 상속 관계의 모든 부모 인스턴스 생성
         Parent ploy = (Parent) child; // 업 캐스팅: 인스턴스 생성 시 상위 클래스의 모든 인스턴스가 메모리 공간에 생성되기 때문에 컴파일 에러가 발생하지 않는다.
         Parent parent = child; // 업 캐스팅에서 (Parent) 생략 가능 -> 자주 사용되는 기능
         ploy.parentMethod();
@@ -64,14 +64,25 @@ public class Extends {
     }
 
     public static void overriding() {
-        Child child = new Child();
+        Child child = new Child("Red");
         System.out.println("child.overriding(): " + child.overriding());
 
         Parent parent = new Parent();
         System.out.println("parent.overriding(): " + parent.overriding());
 
-        Parent ploy = new Child();
+        Parent ploy = new Child("Red");
         // Parent 인스턴스에서 읽지만, 자식 인스턴스가 생성되어 자식에서 오버라이딩 한 메서드가 우선 실행 순위를 갖는다.
         System.out.println("ploy.overriding(): " + ploy.overriding()); // 오버라이딩
+    }
+
+    public static void poly() { // 새로운 기능 추가 시 수정되는 코드
+        Parent[] children = {new Child("Red"), new Child("Blue"), new Child("Black")};
+        for (Parent child : children) {
+            System.out.println("parent.hairColor(): " + getHairColor(child));
+        }
+    }
+
+    private static String getHairColor (Parent parent) { // 새로운 기능 추가 시 수정되지 않  는 코드
+        return parent.hairColor();
     }
 }
