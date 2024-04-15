@@ -1,6 +1,6 @@
 package com.inflearn.lecture.b_basic.abstract_.example;
 
-public class DriverMain {
+public class DriverMain { // repository
 
     public static void main(String[] args) {
         /*

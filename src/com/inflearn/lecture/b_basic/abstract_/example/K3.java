@@ -1,6 +1,6 @@
 package com.inflearn.lecture.b_basic.abstract_.example;
 
-public class K3 implements Car {
+public class K3 implements Car { // provider
     private static final String name = "K3";
 
     @Override

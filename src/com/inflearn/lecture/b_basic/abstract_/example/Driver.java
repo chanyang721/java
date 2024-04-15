@@ -1,6 +1,6 @@
 package com.inflearn.lecture.b_basic.abstract_.example;
 
-public class Driver {
+public class Driver { // auth service
 
     private Car car; // 역할은 역할에 의존한다.
 

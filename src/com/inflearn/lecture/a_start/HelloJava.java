@@ -1,4 +1,4 @@
-package com.inflearn.lecture;
+package com.inflearn.lecture.a_start;
 
 public class HelloJava {
     // 주석 1
