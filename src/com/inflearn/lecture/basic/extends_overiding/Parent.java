@@ -1,9 +1,9 @@
-package com.inflearn.lecture.basic.extends_;
+package com.inflearn.lecture.basic.extends_overiding;
 
 public class Parent {
     /*
-    * 다형성: 상위의 추상 클래스의 경우 인스턴스로 인해 생성되는 것은 옳바른 다형성 사용 방법이 아니다.
-    *   - Animal 같은 추상적 클래스가 생성되어 사용하는 것은 이상하다.
+    * 다형성: 상위의 추상적인 클래스의 경우 인스턴스로 인해 생성되는 것은 옳바른 다형성 사용 방법이 아니다.
+    *   - Fly 같은 추상적인 클래스가 생성되어 사용하는 것은 이상하다.
     * */
 
     public String parentMethod() {

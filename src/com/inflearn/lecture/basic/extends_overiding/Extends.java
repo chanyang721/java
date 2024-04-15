@@ -1,6 +1,4 @@
-package com.inflearn.lecture.basic.extends_;
-
-import javax.print.CancelablePrintJob;
+package com.inflearn.lecture.basic.extends_overiding;
 
 public class Extends {
     public static void main(String[] args) {

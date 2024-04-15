@@ -6,7 +6,6 @@ public class Final {
     private final int instanceFinalValue = 10; // 인스턴스 상수 필드 초기화
     // -> 모든 인스턴스가 공통값을 중복하여 가지고 있기 때문에 클래스 상수로 초기화 하는 것이 좋다
 
-
     private final int constructFinalValue; // 인스턴스 상수 생성자 초기화
 
 
@@ -33,7 +32,6 @@ public class Final {
         *       - 상수는 여러 인스턴스에서 public 접근 제어자로 접근
         *       - 상수는 런타임 상에서 변경 불가능하고, 프로그램 재시작으로 변경
         * */
-
         // 생성자 초기화
         Final final1 = new Final(1000);
         System.out.println("생성자 초기화: " + final1.constructFinalValue);
@@ -52,6 +50,5 @@ public class Final {
 
         final int finalValue = 10;
 //        finalValue = 20; // 컴파일 에러
-
     }
 }

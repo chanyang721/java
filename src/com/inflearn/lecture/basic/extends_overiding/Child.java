@@ -1,4 +1,4 @@
-package com.inflearn.lecture.basic.extends_;
+package com.inflearn.lecture.basic.extends_overiding;
 
 public class Child extends Parent {
     private final String hairColor;
