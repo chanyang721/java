@@ -20,8 +20,11 @@ public class ObjectClass extends Object {
     *       - 부모는 자식을 담을 수 있기 때문에 타입이 다른 모든 객체의 매계변수 타입으로 선언 가능
     *   - 다형성 한계 존재
     *       - 다형성은 다형적 잠조와 메서드 오버라이딩이 같이 사용됨
-    *       - Object는 오버라이딩을 할 수 없음
-    *       -
+    *       - Object 메서드 다형적 참조 가능
+    *       - Object 메서드 오버라이딩 가능
+    *       - 자식 클래스 메서드는 Object에 선언 & 정의 불가능
+    * Object 클래스 사용처
+    *   -
     * */
     public static void main(String[] args) {
         System.out.println("Object.main");
