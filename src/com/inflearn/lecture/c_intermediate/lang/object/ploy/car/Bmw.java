@@ -1,6 +1,11 @@
 package com.inflearn.lecture.c_intermediate.lang.object.ploy.car;
 
-public class Bmw implements Car{
+public class Bmw implements Car {
+
+    @Override
+    public String toString() {
+        return "Bmw 오버라이딩 메서드";
+    }
 
     @Override
     public void enginStart() {

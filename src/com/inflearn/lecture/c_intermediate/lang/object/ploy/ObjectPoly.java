@@ -7,7 +7,7 @@ public class ObjectPoly {
 
     public static void main(String[] args) {
         Bmw bmw = new Bmw(); // 메모리에 생성
-        Dog dog = new Dog();
+        Dog dog = new Dog("바둑이", 2);
 
         action(bmw); // Object 는 모든 클래스의 부모이기 때문에 인스턴스라면 input 가능
         action(dog);
