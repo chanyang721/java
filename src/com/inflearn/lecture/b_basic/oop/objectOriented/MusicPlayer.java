@@ -31,5 +31,4 @@ public class MusicPlayer {
             System.out.println("플레이어 실행 상태 확인 : " + isActive);
         }
     }
-
 }
