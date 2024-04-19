@@ -1,4 +1,4 @@
-package com.inflearn.lecture.c_intermediate.lang.object.ploy.toString;
+package com.inflearn.lecture.c_intermediate.lang.object.toString;
 
 import com.inflearn.lecture.c_intermediate.lang.object.ploy.animal.Dog;
 import com.inflearn.lecture.c_intermediate.lang.object.ploy.car.Bmw;

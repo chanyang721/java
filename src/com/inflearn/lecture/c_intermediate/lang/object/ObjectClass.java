@@ -34,6 +34,6 @@ public class ObjectClass extends Object {
         String string = child.ChildMethod().toLowerCase(); // 최상위 Object 메서드
         System.out.println("child: " + child.ChildMethod());
         System.out.println("parent: " + parent.parentMethod());
-        System.out.println("string" + string);
+        System.out.println(string);
     }
 }

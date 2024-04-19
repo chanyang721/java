@@ -14,5 +14,4 @@ public class Lang {
         *   - java.awt?, javax?
         * */
     }
-
 }
