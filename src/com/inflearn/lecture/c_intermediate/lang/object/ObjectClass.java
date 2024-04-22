@@ -23,8 +23,6 @@ public class ObjectClass extends Object {
     *       - Object 메서드 다형적 참조 가능
     *       - Object 메서드 오버라이딩 가능
     *       - 자식 클래스 메서드는 Object에 선언 & 정의 불가능
-    * Object 클래스 사용처
-    *   -
     * */
     public static void main(String[] args) {
         System.out.println("Object.main");

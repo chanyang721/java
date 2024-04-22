@@ -9,7 +9,7 @@ public class ObjectArray {
         Bmw bmw = new Bmw();
         Object[] objects = {dog, bmw, bmw, bmw};
 
-        System.out.println("size: " + size(objects));
+        System.out.println(STR."size: \{size(objects)}");
     }
 
 
