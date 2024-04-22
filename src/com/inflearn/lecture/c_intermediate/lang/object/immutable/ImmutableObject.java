@@ -19,11 +19,24 @@ public class ImmutableObject {
         return this.finalNumber;
     }
 
+    public String getName() {
+        return this.name;
+    }
+
     public ImmutableObject add(int number) {
         /*
         * 불변 객체의 값 수정은 새로운 객체 전달을 의미
         * */
         int newNumber = this.finalNumber + number; // 새로운 불변 값 생성
         return new ImmutableObject(this.name, newNumber); // 새로운 객체 리턴
+    }
+
+    public ImmutableObject withName(String name) {
+        return new ImmutableObject(name, this.finalNumber);
+    }
+
+    @Override
+    public String toString() {
+        return STR."ImmutableObject{name='\{name}\{'\''}, finalNumber=\{finalNumber}\{'}'}";
     }
 }

@@ -22,6 +22,8 @@ public class Immutable {
         *       - 참조형의 경우 참조값으로 조회되기 때문에 여러 변수에서 조회 & 수정이 가능하다.
         *       - 여러 변수에서 하나의 객체에 대한 수정이 가능하기 때문에 사용자는 어느 객체에서 수정되는지 파악하기 힘들다.
         *
+        * 불변 객체 관례
+        *    - 새로운 불변 객체를 반환하는 메서드는 시작을 with로 시작한다
         * */
         int a = 10;
         System.out.println("a = " + a);
@@ -36,5 +38,9 @@ public class Immutable {
 
         System.out.println(newImmutableObj.getNumber()); // 20
         System.out.println(newImmutableObj); // 4f023edb
+
+        ImmutableObject newObj = ImmutableObj.withName("이름 변경");
+        System.out.println(ImmutableObj.getName()); // 기존 객체
+        System.out.println(newObj.getName()); // 새로운 불변 객체 생성
     }
 }
