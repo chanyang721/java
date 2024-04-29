@@ -1,17 +1,17 @@
 package com.inflearn.lecture.c_intermediate.lang.immutable.example;
 
 public class Address {
-    private String name;
+    private String address;
 
-    public Address(String name) {
-        this.name = name;
+    public Address(String address) {
+        this.address = address;
     }
 
-    public void setAddress(String addressName) {
-        this.name = addressName;
+    public String getAddress() {
+        return address;
     }
 
-    public String getAddressName () {
-        return this.name;
+    public Address setAddress(String address) {
+        return new Address(address);
     }
 }

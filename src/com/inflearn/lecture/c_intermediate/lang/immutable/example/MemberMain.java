@@ -20,8 +20,8 @@ public class MemberMain {
          *  - B 주소 수정 시 A 주소 변경 (같은 address 객체 사용)
          * */
         memberB.getAddress().setAddress("부산");
-        System.out.println("memberA.getAddress().getAddressName() = " + memberA.getAddress().getAddressName()); // 부산
-        System.out.println("memberB.getAddress() = " + memberB.getAddress().getAddressName()); // 부산
+        System.out.println("memberA.getAddress().getAddressName() = " + memberA.getAddress().getAddress()); // 부산
+        System.out.println("memberB.getAddress() = " + memberB.getAddress().getAddress()); // 부산
 
         /*
         * 불변 객체 생성 테스트
@@ -33,7 +33,14 @@ public class MemberMain {
         /* 불변 주소로 새로 생성한 불변 객체 */
         System.out.println("immutableMemberB.getAddress() = " + immutableMemberB.getAddress().getName());
 
+        // 사이드 이펙트 보완
         immutableMemberB.setAddress(new ImmutableAddress("변경 주소"));
         System.out.println("immutableMemberB.getAddress() = " + immutableMemberB.getAddress().getName());
+
+        /*
+        * 불변 객체 setter
+        *   - 새로운 값으로 만들어진 객체 리턴
+        * */
+
     }
 }
