@@ -19,5 +19,7 @@ public class ImmutableMyDateMain {
         ImmutableMyDate newDayDate = date2.withDay(30);
         System.out.println("Day = " + date.getDay());
         System.out.println(STR."newDayDate = \{newDayDate}");
+
+        ImmutableMyDate immutableMyDate = new ImmutableMyDate(2025, 10, 10);
     }
 }
