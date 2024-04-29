@@ -32,8 +32,6 @@ public class StringBasic {
         *   - 문자열 pool 사용으로 인해 같은 문자을은 여러 변수에서 같이 사용된다.
         *   - 따라서, 문자열 수정 시 새로운 문자열 객체를 리턴한다.
         *
-        * 단점
-        *   -
         * */
         String str = new String("string"); // 보통 "string"로 줄여서 사용
         String str2 = "string";

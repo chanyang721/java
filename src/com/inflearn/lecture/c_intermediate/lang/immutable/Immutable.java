@@ -20,7 +20,7 @@ public class Immutable {
         *   - 기본형: 같은 값을 다른 메모리 공간에 넣는다.
         *   - 참조형: 같은 참조값을 다른 메모리 공간에 넣는다.
         *       - 참조값을 공유하기 때문에 여러 변수에서 조회 & 수정이 가능
-        *       - 여러 변수에서 같은 객체 수정하면 특정 변수의 객체가 어떻게 수정되는지 파악이 어려움
+        *       - 공유 참조되는 객체를 수정하면 객체가 어떻게 수정되는지 파악이 어려움
         *
         * 불변 객체 사용 관례
         *   - 새로운 불변 객체를 반환하는 메서드는 시작을 with로 시작한다
@@ -49,5 +49,14 @@ public class Immutable {
         ImmutableObject newObj = ImmutableObj.withName("이름 변경"); // 새로운 불변 객체 생성 시 메서드 이름을 with로 시작
         System.out.println(ImmutableObj.getName()); // 기존 객체
         System.out.println(newObj.getName()); // 새로운 불변 객체 생성
+
+        /*
+        *
+        * */
+        sideEffect();
+    }
+
+    public static void sideEffect() {
+
     }
 }
