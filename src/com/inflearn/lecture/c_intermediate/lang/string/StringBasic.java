@@ -33,8 +33,8 @@ public class StringBasic {
         *   - 따라서, 문자열 수정 시 새로운 문자열 객체를 리턴한다.
         *
         * */
-        String str = new String("string"); // 보통 "string"로 줄여서 사용
-        String str2 = "string";
+        String str = new String("string"); // "string"로 줄여서 사용
+        String str2 = "string"; // 자바에서 new String() 대신 해줌
 
         String a = "Hello Immutable Object:  ";
         String b = "String Class";
