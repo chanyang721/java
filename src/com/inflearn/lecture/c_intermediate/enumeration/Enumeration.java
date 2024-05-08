@@ -2,10 +2,6 @@ package com.inflearn.lecture.c_intermediate.enumeration;
 
 public class Enumeration {
     public static void main(String[] args) {
-        /*
-        * 열거형이 등장한 이유
-        *   - 타입 안전형
-        * */
         System.out.println(STR."1 :\{Grade.GOLD.getClass()}");
         System.out.println(STR."2 :\{Grade.SLIVER.getClass()}");
         System.out.println(STR."3 :\{Grade.DIAMOND.getClass()}");

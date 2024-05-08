@@ -3,6 +3,7 @@ package com.inflearn.lecture.c_intermediate.enumeration;
 public class GradeEnumClass {
     /*
     * 타입 안전 열거형 패턴
+    *   - 자바의 enum 키워드는 다음과 같은 클래스를 생성
     * */
     private static final GradeEnumClass GOLD = new GradeEnumClass(10);
     private static final GradeEnumClass SLIVER = new GradeEnumClass(20);
