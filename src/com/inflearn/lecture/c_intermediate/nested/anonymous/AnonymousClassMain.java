@@ -57,5 +57,16 @@ public class AnonymousClassMain {
                 }
             }
         });
+
+        /* 람다 사용 */
+        Printer(() -> {
+            int randomValue = new Random().nextInt(6) + 1;
+            System.out.println("Dice = " + randomValue);
+        });
+        Printer(() -> {
+            for (int i = 0; i <= 3; i++) {
+                System.out.println("i = " + i);
+            }
+        });
     }
 }
