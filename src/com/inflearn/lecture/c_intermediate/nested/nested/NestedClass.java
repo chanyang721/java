@@ -33,6 +33,9 @@ public class NestedClass {
         *
         * 지역 클래스
         *   - 캡쳐
+        *
+        * 익명 클래스
+        *   -
         * */
     }
 

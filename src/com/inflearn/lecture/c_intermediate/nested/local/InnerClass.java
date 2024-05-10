@@ -1,4 +1,4 @@
-package com.inflearn.lecture.c_intermediate.nested.localClass;
+package com.inflearn.lecture.c_intermediate.nested.local;
 
 public class InnerClass {
 
