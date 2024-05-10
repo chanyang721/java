@@ -1,4 +1,4 @@
-package com.inflearn.lecture.c_intermediate.nested;
+package com.inflearn.lecture.c_intermediate.nested.nested;
 
 public class NestedClass {
     public static void main(String[] args) {
@@ -30,6 +30,9 @@ public class NestedClass {
         * 내부 클래스
         *   - 개념 상 외부 클래스의 인스턴스 내부에 내부 클래스가 생성
         *   - 실제 메모리에는 내부 인스턴스에 외부 인스턴스의 참조값을 보관하여 접근
+        *
+        * 지역 클래스
+        *   - 캡쳐
         * */
     }
 
@@ -71,18 +74,13 @@ public class NestedClass {
     /*
      * 내부 클래스
      *
-     * 특징: 외부 클래스의 인스턴스에 소속된다
+     * 특징: 외부 클래스의 인스턴스에 소속
      * */
     class NonStsticInnerClass {
 
-        /* 생성자 */
-        public NonStsticInnerClass() {
-        }
+        /* 로컬 내부 클래스 */
+        class LocalInnerClass {
 
-        class LocalInnerclass {
-            /*
-            * 로컬 중첩 클래스
-            * */
         }
     }
 

@@ -1,4 +1,4 @@
-package com.inflearn.lecture.c_intermediate.nested;
+package com.inflearn.lecture.c_intermediate.nested.nested;
 
 public class NestedClassMain {
     public static void main(String[] args) {

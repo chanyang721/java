@@ -1,6 +1,6 @@
-package com.inflearn.lecture.c_intermediate.nested;
+package com.inflearn.lecture.c_intermediate.nested.inner;
 
-public class InnerOuter {
+public class InnerClass {
     private static String innerOuterValue = "내부 클래스 정적 맴버";
     private String innerOuterInstanceValue = "내부 클래스의 인스턴스 맴버";
 
