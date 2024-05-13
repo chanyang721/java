@@ -4,7 +4,7 @@ public class NetworkService {
 
     public static void main(String[] args) {
         /*
-        * 데이터 전송 예시
+        *
         *
         *
         * 나와 다르게 구현한 것
