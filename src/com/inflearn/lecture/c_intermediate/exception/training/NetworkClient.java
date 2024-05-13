@@ -1,6 +1,6 @@
 package com.inflearn.lecture.c_intermediate.exception.training;
 
-public class NetworkClient {
+public class NetworkClient implements AutoCloseable {
     private final String address;
     private boolean connectError;
     private boolean sendError;
@@ -31,5 +31,11 @@ public class NetworkClient {
     public void initError(String data) {
         if (data.equals("sendError")) sendError = true;
         if (data.equals("connectError")) connectError = true;
+    }
+
+    @Override
+    public synchronized void close() {
+        System.out.println("NetworkClientV5.close");
+        disConnect();
     }
 }
