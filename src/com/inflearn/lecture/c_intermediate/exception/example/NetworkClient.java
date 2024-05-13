@@ -14,26 +14,26 @@ public class NetworkClient {
     public String connect () {
         if (error) {
             System.out.println("연결 에러");
-            return "연결 에러";
+            return "connect error";
         }
 
         System.out.println(STR."address 연결 성공 = \{address}");
-        return "연결 성공";
+        return "success";
     }
 
-    public String diaConnect() {
+    public String disConnect() {
         System.out.println("address 연결 해제 = " + address);
-        return "연결 해제 성공";
+        return "success";
     }
 
     public String sendMessage(String data) {
         if (sendError) {
             System.out.println(address + "전송 실패: " + data);
-            return "error";
+            return "send error";
         }
 
         System.out.println(STR."데이터 전송 성공 = \{data}");
-        return "데이터 전송 성공";
+        return "success";
     }
 
     public void initError(String data) {

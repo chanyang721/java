@@ -4,7 +4,9 @@ public class NetworkService {
 
     public static void main(String[] args) {
         /*
-        *
+        * 정상 흐름과 예외 흐름의 분리
+        *   - 가독성을 위해 분리
+        *   -
         *
         *
         * 나와 다르게 구현한 것
@@ -16,16 +18,29 @@ public class NetworkService {
         * */
     }
 
-    public void sendMessage(String data) {
+    public String sendMessage(String data) {
         String address = "http://example.com";
         NetworkClient network = new NetworkClient(address);
 
         network.initError(data); // 에러 발생 데이터 추가
 
-        network.connect();
+        String connectResult = network.connect();
+        if (isError(connectResult)) {
+            network.disConnect();
+            return "error";
+        }
 
-        network.sendMessage(data);
+        String sendResult = network.sendMessage(data);
+        if (isError(sendResult)) {
+            network.disConnect();
+            return "error";
+        }
 
-        network.diaConnect();
+        network.disConnect();
+        return "success";
+    }
+
+    private boolean isError(String reuslt) {
+        return !reuslt.equals("success");
     }
 }
