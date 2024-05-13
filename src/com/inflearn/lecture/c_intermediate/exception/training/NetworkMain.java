@@ -10,6 +10,7 @@ public class NetworkMain {
         while (true) {
             System.out.println("전송할 문자: ");
             String line = scanner.nextLine();
+
             if(line.equals("exit")) break;
 
             service.sendMessage(line);

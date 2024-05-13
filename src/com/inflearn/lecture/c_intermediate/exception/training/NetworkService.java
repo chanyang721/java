@@ -8,11 +8,17 @@ public class NetworkService {
 
         client.initError(data);
 
-        client.connect();
+        try {
+            client.connect();
 
-        client.send(data);
-
-        client.disConnect();
+            client.send(data);
+        }
+        catch (Exception e) {
+            System.out.println("e.getMessage() = " + e.getMessage());
+        }
+        finally {
+            client.disConnect();
+        }
     }
 
 }
