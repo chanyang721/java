@@ -9,7 +9,6 @@ public class NetworkClient {
 
     public NetworkClient(String address) {
         this.address = address;
-        initError("sendError");
     }
     
     public String connect () {
